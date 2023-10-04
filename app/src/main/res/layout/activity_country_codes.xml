@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvContactsTitle"
+        android:id="@+id/tvCountryCodesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/contacts"
+        android:text="@string/country_codes"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,42 +19,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvContacts"
+        android:id="@+id/rcvCountries"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:paddingStart="10dp"
         android:paddingTop="20dp"
         android:paddingEnd="10dp"
         android:paddingBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/ibAdd"
+        app:layout_constraintBottom_toTopOf="@+id/bContacts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvContactsTitle">
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryCodesTitle">
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
-        android:id="@+id/bCountryCodes"
+        android:id="@+id/bContacts"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:text="@string/country_codes"
+        android:text="@string/contacts"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/rcvContacts" />
+        app:layout_constraintStart_toStartOf="@+id/rcvCountries" />
 
-    <ImageButton
-        android:id="@+id/ibAdd"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="10dp"
-        android:contentDescription="@string/add"
-        app:layout_constraintBottom_toTopOf="@+id/bCountryCodes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
